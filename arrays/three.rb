@@ -1,9 +1,18 @@
+# Brute Force
 def two_sum(nums, target)
   nums.each_with_index do |num, index|
+    i = 0
+    (nums.length - 1).times do
+      next if index == i 
+
+      return [index, i] if num + nums[i] == target 
+      i += 1
+    end
   end
 end
 
 two_sum([3,2,3], 6)
+
 # First check first number vs second number
   # If the sum of the two is target end the program
 # Check first num vs third num...
