@@ -15,6 +15,12 @@
 def two_sum(nums, target)
   hash = {}
   nums.each_with_index do |num, index|
+    diff = target - num
+    if hash.key?(diff)
+      return [hash[diff], index]
+    end
+
+    hash[num] = index
   end
 end
 
