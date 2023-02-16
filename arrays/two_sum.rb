@@ -27,3 +27,9 @@ two_sum([3,2,3], 6)
 # If first number + any of the other numbers doesn't equal the target save the first number into an array
 # If second number is present in the hash skip it
 # etc...
+
+db.birds.findAndModify({ query: {  _id: ObjectId("628682d92f3fa87b7d86dcce")},
+                         update:{ $inc: {sightings_count: 1}},
+                         new: true, 
+                        }
+)
