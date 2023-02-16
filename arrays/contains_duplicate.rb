@@ -1,19 +1,19 @@
 # Brute Force
-def contains_duplicate(nums)
-  saved_nums = [nums[0]]
+# def contains_duplicate(nums)
+#   saved_nums = [nums[0]]
 
-  nums.each_with_index do |num, index|
-    next if index === 0
+#   nums.each_with_index do |num, index|
+#     next if index === 0
 
-    if saved_nums.include?(num)
-      return true
-    else 
-      saved_nums << num
-    end 
-  end
+#     if saved_nums.include?(num)
+#       return true
+#     else 
+#       saved_nums << num
+#     end 
+#   end
 
-  false
-end
+#   false
+# end
 
 # Sort first
 def contains_duplicate(nums)
