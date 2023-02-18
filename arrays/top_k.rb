@@ -1,4 +1,9 @@
 def top_k_frequent(nums, k)
+  count = Hash.new(0)
+
+  nums.each do |num|
+    count[num] += 1
+  end
 end
 
 nums = [1,1,1,2,2,3]
