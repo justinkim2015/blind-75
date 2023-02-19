@@ -14,11 +14,8 @@ def top_k_frequent(nums, k)
   final
 end
 
-# nums = [1,1,1,2,2,3]
 nums = [4,1,-1,2,-1,2,3]
-
 k = 2
-
 top_k_frequent(nums, k)
 
 # strategy
